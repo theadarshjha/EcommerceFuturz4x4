@@ -16,18 +16,149 @@
   }
 }
 
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'sf-pro-text', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    ),
+    rgb(var(--background-start-rgb)) rgb(0, 0, 0);
+  overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Header styles */
+.header {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f8f8f8;
+  border-radius: 3rem;
+}
+
+/* YouTube widget styles */
+.youtube-widget-container {
+  max-width: 100%;
+  height: auto; /* Adjust if needed */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.elfsight-app-c10b8472-2a54-472a-a343-d80ec57a2181 {
+  width: 100%; /* or specify a fixed width if needed */
+  height: 100%; /* or specify a fixed height if needed */
+}
+
+/* Add to your global stylesheet or within a <style> tag in the component */
+
+@media (max-width: 640px) {
+  .ProductList-container {
+    overflow-x: auto;
+    display: flex;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .ProductCard-container {
+    scroll-snap-align: start;
+    flex: 0 0 100%; /* Show one card at a time */
   }
 }
+.carousel {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+  
+
+/* Responsive styles */
+/* Mobile Styles 
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar a {
+    padding: 10px;
+    text-align: left;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .product-card {
+    padding: 10px;
+  }
+
+  .header, .footer {
+    padding: 10px;
+  }
+}
+
+Fluid containers 
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+
+ Flexbox layout 
+.flex-container {
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+ Grid layout
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+ Ensure no unexpected margins or paddings
+.container {
+  margin: 0;
+  padding: 0;
+}
+ Tailwind CSS for product cards (Ensure this is in your globals.css or component-specific CSS) 
+.product-card {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+*/
