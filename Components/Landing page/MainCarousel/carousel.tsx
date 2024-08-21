@@ -5,7 +5,7 @@ import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 interface CarouselItem {
   path: string;
-  image: string | StaticImport;
+  image: string;
 }
 
 interface CarouselProps {
@@ -36,7 +36,7 @@ const Carousel = ({ carouselData }: CarouselProps) => {
         <div className="carousel" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
           {carouselData.map((item: CarouselItem, i: Key | null | undefined) => (
             <a key={i} className="carousel-item" href={item.path}>
-              <Image src={item.image} alt={`carousel image ${i}`} />
+              <img src={item.image} alt={`carousel image ${i}`} />
             </a>
           ))}
         </div>
