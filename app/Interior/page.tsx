@@ -6,6 +6,7 @@ import FilterItems from '@/Components/FilterItems';
 import { SubCategoryType } from '@/Components/Types/Filter';
 import ProductCard from '@/Components/ProductCard/productcard';
 import Filter from '@/Components/Filter';
+import { Product } from '@/Components/Types/product';
 
 const Interior = () => {
   const [filters, setFilters] = useState({
@@ -13,16 +14,18 @@ const Interior = () => {
     searchQuery: '',
   });
 
-  const products = [
+  const products: Product[] = [
     {
       id: "1",
       name: 'Leather Seat Covers',
       description: 'Premium leather seat covers for a luxurious feel.',
       price: 199.99,
-      image: '',
-      category:'thar accessories',
-      newArrival:false,
-      
+      image: '', // Ensure this path is correctly set
+      imageAlt: 'Leather Seat Covers', // Added for better accessibility
+      category: 'thar accessories',
+      newArrival: false,
+      discountPrice: undefined, // Set to undefined or remove if not applicable
+      href: '/products/1' // Added href for product page link
     },
     {
       id: "2",
@@ -30,11 +33,15 @@ const Interior = () => {
       description: 'High-definition dashboard camera for safety and recording.',
       price: 99.99,
       image: '/images/dashboard-camera.jpg',
-      newArrival:false,
-      category:'thar accessories',
+      imageAlt: 'Dashboard Camera', // Added for better accessibility
+      category: 'thar accessories',
+      newArrival: false,
+      discountPrice: undefined, // Set to undefined or remove if not applicable
+      href: '/products/2' // Added href for product page link
     },
     // Add more products as needed
   ];
+  
 
   const filteredProducts = products.filter((product) => {
     return (

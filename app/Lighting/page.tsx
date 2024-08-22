@@ -6,6 +6,7 @@ import Filter from '@/Components/Filter';
 import FilterItems from '@/Components/FilterItems';
 import { SubCategoryType } from '@/Components/Types/Filter';
 import ProductCard from '@/Components/ProductCard/productcard';
+import { Product } from '@/Components/Types/product';
 
 const Lighting = () => {
   const [filters, setFilters] = useState({
@@ -13,29 +14,34 @@ const Lighting = () => {
     searchQuery: '',
   });
 
-  const products = [
+  const products: Product[] = [
     {
-      id: '2',
+      id: '1', // Updated id
       name: 'LED Headlights',
       description: 'High-quality LED headlights for better visibility.',
       price: 299.99,
       image: '/images/led-headlights.jpg',
-      newArrival:false,
-      category:"thar accessories"
-
+      imageAlt: 'LED Headlights', // Added imageAlt for better accessibility
+      category: 'thar accessories',
+      newArrival: false,
+      discountPrice: undefined, // Set to undefined or remove if not applicable
+      href: '/products/1' // Added href for product page link
     },
     {
-      id: '2',
+      id: '2', // Unique id
       name: 'Fog Lights',
       description: 'Durable fog lights for improved driving in foggy conditions.',
       price: 149.99,
       image: '/images/fog-lights.jpg',
-      newArrival:false,
-      category:"thar accessories"
+      imageAlt: 'Fog Lights', // Added imageAlt for better accessibility
+      category: 'thar accessories',
+      newArrival: false,
+      discountPrice: undefined, // Set to undefined or remove if not applicable
+      href: '/products/2' // Added href for product page link
     },
     // Add more products as needed
   ];
-
+  
   const filteredProducts = products.filter((product) => {
     return (
       product.price >= filters.priceRange[0] &&

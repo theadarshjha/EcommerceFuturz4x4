@@ -6,6 +6,7 @@ import Filter from '@/Components/Filter';
 import FilterItems from '@/Components/FilterItems';
 import { SubCategoryType } from '@/Components/Types/Filter';
 import ProductCard from '@/Components/ProductCard/productcard';
+import { Product } from '@/Components/Types/product';
 
 const Exterior = () => {
   const [filters, setFilters] = useState({
@@ -13,29 +14,34 @@ const Exterior = () => {
     searchQuery: '',
   });
 
-  const products = [
+  const products: Product[] = [
     {
-        id:'1' ,
-        name: 'Bumper Guards',
-        description: 'Durable bumper guards for extra protection.',
-        price: 299.99,
-        image: '/images/bumper-guards.jpg', // Add this property
-        category: 'exterior', // Add this property
-        newArrival:false,
+      id: '1',
+      name: 'Bumper Guards',
+      description: 'Durable bumper guards for extra protection.',
+      price: 299.99,
+      image: '/images/bumper-guards.jpg',
+      imageAlt: 'Bumper Guards', // Added for better accessibility
+      category: 'exterior',
+      newArrival: false,
+      discountPrice: undefined, // Set to undefined if not applicable
+      href: '/products/1' // Added href for product page link
     },
     {
-        id: '2',
-        name: 'Roof Rack',
-        description: 'Spacious roof rack for extra storage.',
-        price: 149.99,
-        image: '/images/roof-rack.jpg', // Add this property
-        category: 'exterior', // Add this property
-      
-        newArrival:false,
+      id: '2',
+      name: 'Roof Rack',
+      description: 'Spacious roof rack for extra storage.',
+      price: 149.99,
+      image: '/images/roof-rack.jpg',
+      imageAlt: 'Roof Rack', // Added for better accessibility
+      category: 'exterior',
+      newArrival: false,
+      discountPrice: undefined, // Set to undefined if not applicable
+      href: '/products/2' // Added href for product page link
     },
     // Add more products as needed
   ];
-
+  
   const filteredProducts = products.filter((product) => {
     return (
       product.price >= filters.priceRange[0] &&
