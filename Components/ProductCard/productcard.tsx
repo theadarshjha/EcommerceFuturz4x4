@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useCart } from '@/Components/contexts/CartContext';
 import { Product } from '@/Components/Types/product';
-import QuickAddToCart from '@/Components/QuickAddToCart';
+import QuickAddToCart from '@/Components/cart/QuickAddToCart';
 
 const ProductCard = ({ product }: { product: Product }) => {
   const { addToCart } = useCart();

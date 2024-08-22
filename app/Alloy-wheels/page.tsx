@@ -6,7 +6,7 @@ import Filter from '@/Components/Filter';
 import FilterItems from '@/Components/FilterItems';
 import { SubCategoryType } from '@/Components/Types/Filter';
 import { Product } from '@/Components/Types/product'; // Ensure you import the Product type
-import ProductCard from '@/Components/productcard';
+import ProductCard from '@/Components/ProductCard/productcard';
 
 const AlloyWheels = () => {
   const [filters, setFilters] = useState({

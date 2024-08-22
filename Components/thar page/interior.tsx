@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ProductCard from '@/Components/productcard'; // Import ProductCard component
+import ProductCard from '@/Components/ProductCard/productcard'; // Import ProductCard component
 import Filter from '@/Components/thar page/filter';   
 
 function SubCategoryPage({ subcategoryId }) {

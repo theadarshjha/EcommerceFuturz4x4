@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import ProductCard from '@/Components/productcard';
+import ProductCard from '@/Components/ProductCard/productcard';
 import products from '@/Components/data/products'; // Ensure the correct path to the data
 
 const ProductList = () => {

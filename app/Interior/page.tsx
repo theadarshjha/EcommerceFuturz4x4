@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 
 import FilterItems from '@/Components/FilterItems';
 import { SubCategoryType } from '@/Components/Types/Filter';
-import ProductCard from '@/Components/productcard';
+import ProductCard from '@/Components/ProductCard/productcard';
 import Filter from '@/Components/Filter';
 
 const Interior = () => {

@@ -4,7 +4,7 @@ import Subcategory from '@/Components/thar page/Subcategory';
 import TharBanner from '@/Components/thar page/tharBanner';
 import Head from 'next/head';
 import AccessoriesSection from '@/Components/thar page/AccessoriesSection';
-import ProductCard from '@/Components/productcard'; // Ensure this is the correct path
+import ProductCard from '@/Components/ProductCard/productcard'; // Ensure this is the correct path
 import products from '@/Components/data/products'; // Adjust the import path to your actual product data file
 
 const TharAccessories = () => {

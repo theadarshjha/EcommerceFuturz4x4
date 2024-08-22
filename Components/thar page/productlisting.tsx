@@ -1,7 +1,7 @@
 // components/ProductList.js
 'use client'
 import React, { useState } from 'react';
-import ProductCard from '@/Components/productcard';
+import ProductCard from '@/Components/ProductCard/productcard';
 
 const products = [
   {

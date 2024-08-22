@@ -2,10 +2,9 @@
 import { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import Header5 from '@/Components/Landing page/header&footer/header5';
 import Footer from '@/Components/Landing page/header&footer/footer';
 import { CartProvider } from '@/Components/contexts/CartContext';
-import Header from '@/Components/Landing page/header';
+import Header from '@/Components/Landing page/header&footer/header';
 
 const inter = Inter({ subsets: ['latin'] });
 

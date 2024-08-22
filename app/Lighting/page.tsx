@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import Filter from '@/Components/Filter';
 import FilterItems from '@/Components/FilterItems';
 import { SubCategoryType } from '@/Components/Types/Filter';
-import ProductCard from '@/Components/productcard';
+import ProductCard from '@/Components/ProductCard/productcard';
 
 const Lighting = () => {
   const [filters, setFilters] = useState({

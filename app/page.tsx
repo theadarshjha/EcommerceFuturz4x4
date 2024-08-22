@@ -2,8 +2,7 @@
 "use client"
 import React from 'react';
 import Head from 'next/head';
-import Example from '@/Components/Landing page/header';
-import Banner1 from '@/Components/Landing page/banner';
+import Example from '@/Components/Landing page/header&footer/header';
 import MainCategory from '@/Components/Landing page/category/Mainc';
 import ProductList from '@/Components/Landing page/productlist/productlist';
 import GoogleReviewsWidget from '@/Components/Landing page/googlereviews';

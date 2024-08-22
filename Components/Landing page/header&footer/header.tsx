@@ -18,7 +18,7 @@ import {
   TabPanels,
 } from '@headlessui/react'
 import { MinusIcon, MagnifyingGlassIcon, ShoppingBagIcon, XMarkIcon } from '@heroicons/react/24/outline';
-import { useCart } from '../contexts/CartContext';
+import { useCart } from '../../contexts/CartContext';
 const navigation = {
   categories: [
     {
