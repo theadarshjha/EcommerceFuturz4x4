@@ -1,5 +1,6 @@
   // components/Types/product.ts
   export interface Product {
+      href: string;
       imageAlt: string | undefined;
       color?: ReactNode;
       quantity?: ReactNode;

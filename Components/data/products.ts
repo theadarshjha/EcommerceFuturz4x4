@@ -11,6 +11,7 @@ const products: Product[] = [
     imageAlt:'product',
     newArrival: true,
     discountPrice: 7500,
+    href: '/productpage/121',
   },
   {
     id: '12',
@@ -21,6 +22,7 @@ const products: Product[] = [
     image: '/product/c1.png',
     imageAlt:'product',
     newArrival: false,
+    href: '/productpage/12',
   },
   {
     id: '32',
@@ -32,6 +34,7 @@ const products: Product[] = [
     image: '/product/c1.png',
     imageAlt:'product',
     newArrival: false,
+    href: '/productpage/32',
   },
   // Add more products here if needed
 ];

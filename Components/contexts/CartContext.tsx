@@ -13,8 +13,8 @@ interface CartContextType {
   addToCart: (product: Product) => void;
   removeFromCart: (product: Product) => void;
   updateQuantity: (product: Product, quantity: number) => void;
-  increaseQuantity: (product: Product) => void; // Add this
-  decreaseQuantity: (product: Product) => void; // Add this
+  increaseQuantity: (product: Product) => void;
+  decreaseQuantity: (product: Product) => void;
   totalPrice: number;
   setCart: React.Dispatch<React.SetStateAction<CartItem[]>>;
   cartCount: number;
@@ -54,7 +54,8 @@ export const CartProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
             : item
         );
       } else {
-        return [...prevCart, { ...product, quantity: 1 }];
+        // Ensure href and quantity are included in the new CartItem
+        return [...prevCart, { ...product, href: product.href || '', quantity: 1 }];
       }
     });
   };
