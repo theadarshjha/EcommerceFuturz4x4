@@ -21,22 +21,27 @@ const AlloyWheels = () => {
       description: 'Stylish 17-inch alloy wheels for better performance.',
       price: 699,
       image: '/images/alloy-wheels-17.jpg', // Changed imageUrl to image
+      imageAlt: '17 inch Alloy Wheels', // Added imageAlt for better accessibility
       category: 'Alloy Wheels', // Added category
-      discountPrice: '₹649.99', // Added discountPrice
-      newArrival:false,
+      discountPrice: 699, // Added discountPrice
+      newArrival: false, // Added newArrival
+      href: '/products/1' // Added href for product page link
     },
     {
       id: '2',
       name: 'Wheel Covers',
       description: 'Protective wheel covers for added durability.',
       price: 49,
-      image: '/images/wheel-covers.jpg', 
+      image: '/images/wheel-covers.jpg',
+      imageAlt: 'Wheel Covers', // Added imageAlt for better accessibility
       category: 'Alloy Wheels',
-      discountPrice: '₹39.99',
-      newArrival:false,
+      discountPrice: 39.99,
+      newArrival: false,
+      href: '/products/2' // Added href for product page link
     },
     // Add more products as needed
   ];
+  
 
   const filteredProducts = products.filter((product) => {
     return (
