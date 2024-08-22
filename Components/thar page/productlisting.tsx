@@ -10,8 +10,10 @@ const products = [
     category: 'Hilux Accessories',
     description: 'MRP ₹48,800 (Incl. of all taxes)',
     image: '/product/h1.png',
-    price: 48800, // Converted from string to number
-    newArrival: false, // Adjust based on your requirements
+    imageAlt: 'Toyota Hilux - Tornado Roll Bar',
+    href: '/products/111', // Assuming this is the link to the product page
+    price: 48800,
+    newArrival: false,
   },
   {
     id: '20',
@@ -19,8 +21,10 @@ const products = [
     category: 'Hilux Accessories',
     description: 'MRP ₹21,600 (Incl. of all taxes)',
     image: '/product/c1.png',
-    price: 21700, // Converted from string to number
-    newArrival: false, // Adjust based on your requirements
+    imageAlt: 'Toyota Hilux - Combat Roll Bar',
+    href: '/products/20', // Assuming this is the link to the product page
+    price: 21700,
+    newArrival: false,
   },
   {
     id: '3',
@@ -28,8 +32,10 @@ const products = [
     category: 'Hilux Accessories',
     description: 'MRP ₹58,300 (Incl. of all taxes)',
     image: '/product/pro1-removebg-preview.png',
-    price: 58300, // Converted from string to number
-    newArrival: false, // Adjust based on your requirements
+    imageAlt: 'Toyota Hilux - Alfa Roof Rack with Fenders',
+    href: '/products/3', // Assuming this is the link to the product page
+    price: 58300,
+    newArrival: false,
   },
   {
     id: '4',
@@ -37,8 +43,10 @@ const products = [
     category: 'Hilux Accessories',
     description: 'MRP ₹58,300 (Incl. of all taxes)',
     image: '/product/pro1-removebg-preview.png',
-    price: 58300, // Converted from string to number
-    newArrival: false, // Adjust based on your requirements
+    imageAlt: 'Toyota Hilux - Alfa Roof Rack with Fenders',
+    href: '/products/4', // Assuming this is the link to the product page
+    price: 58300,
+    newArrival: false,
   },
   {
     id: '5',
@@ -46,8 +54,10 @@ const products = [
     category: 'Hilux Accessories',
     description: 'MRP ₹58,300 (Incl. of all taxes)',
     image: '/product/pro1-removebg-preview.png',
-    price: 58300, // Converted from string to number
-    newArrival: false, // Adjust based on your requirements
+    imageAlt: 'Toyota Hilux - Alfa Roof Rack with Fenders',
+    href: '/products/5', // Assuming this is the link to the product page
+    price: 58300,
+    newArrival: false,
   },
   {
     id: '6',
@@ -55,8 +65,10 @@ const products = [
     category: 'Hilux Accessories',
     description: 'MRP ₹58,300 (Incl. of all taxes)',
     image: '/product/pro1-removebg-preview.png',
-    price: 99900, // Converted from string to number
-    newArrival: false, // Adjust based on your requirements
+    imageAlt: 'Toyota Hilux - Alfa Roof Rack with Fenders',
+    href: '/products/6', // Assuming this is the link to the product page
+    price: 99900,
+    newArrival: false,
   },
 ];
 
