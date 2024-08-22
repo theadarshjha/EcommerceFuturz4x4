@@ -8,6 +8,7 @@ const products: Product[] = [
     description: 'MRP ₹48,800 (Incl. of all taxes)',
     price: 8300,
     image: '/product/h1.png',
+    imageAlt:'product',
     newArrival: true,
     discountPrice: 7500,
   },
@@ -18,6 +19,7 @@ const products: Product[] = [
     description: 'MRP ₹21,400 (Incl. of all taxes)',
     price: 21400,
     image: '/product/c1.png',
+    imageAlt:'product',
     newArrival: false,
   },
   {
@@ -28,6 +30,7 @@ const products: Product[] = [
     price: 21400,
     discountPrice: 19200,
     image: '/product/c1.png',
+    imageAlt:'product',
     newArrival: false,
   },
   // Add more products here if needed
