@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { SearchIcon, ShoppingCartIcon } from '@heroicons/react/outline';
+import { MagnifyingGlassIcon, ShoppingCartIcon } from '@heroicons/react/outline';
 
 const Header = () => {
   return (
@@ -64,7 +64,7 @@ const Header = () => {
         <div className="flex items-center pr-4 gap-3">
           <Link href="#" passHref>
             <span className="text-gray-800 hover:text-blue-500 flex items-center cursor-pointer">
-              <SearchIcon className="h-5 w-5 mr-1" />
+              <MagnifyingGlassIcon className="h-5 w-5 mr-1" />
               Search
             </span>
           </Link>
