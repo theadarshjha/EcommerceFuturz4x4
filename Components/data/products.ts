@@ -34,7 +34,7 @@ const products: Product[] = [
     image: '/product/c1.png',
     imageAlt:'product',
     newArrival: false,
-    href: '/productpage/32',
+    href: '/product/32',
   },
   // Add more products here if needed
 ];
