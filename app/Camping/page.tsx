@@ -6,6 +6,7 @@ import Filter from '@/Components/Filter';
 import FilterItems from '@/Components/FilterItems';
 import { SubCategoryType } from '@/Components/Types/Filter';
 import ProductCard from '@/Components/ProductCard/productcard';
+import { Product } from '@/Components/Types/product';
 
 const Camping = () => {
   const [filters, setFilters] = useState({
@@ -13,15 +14,18 @@ const Camping = () => {
     searchQuery: '',
   });
 
-  const products = [
+  const products: Product[] = [
     {
       id: '1',
       name: 'Camping Tent',
       description: 'Durable camping tent with easy setup.',
       price: 249.99,
       image: '/images/camping-tent.jpg',
-      newArrival:false,
-      category:'hilux accessories'
+      imageAlt: 'Camping Tent', // Added imageAlt for better accessibility
+      category: 'hilux accessories',
+      newArrival: false,
+      discountPrice: undefined, // Set to undefined or remove if not applicable
+      href: '/products/1' // Added href for product page link
     },
     {
       id: '2',
@@ -29,11 +33,15 @@ const Camping = () => {
       description: 'Comfortable sleeping bag for all-weather camping.',
       price: 79.99,
       image: '/images/sleeping-bag.jpg',
-      newArrival:false,
-     category:'hilux accessories'
+      imageAlt: 'Sleeping Bag', // Added imageAlt for better accessibility
+      category: 'hilux accessories',
+      newArrival: false,
+      discountPrice: undefined, // Set to undefined or remove if not applicable
+      href: '/products/2' // Added href for product page link
     },
     // Add more products as needed
   ];
+  
 
   const filteredProducts = products.filter((product) => {
     return (
