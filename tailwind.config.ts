@@ -12,11 +12,7 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      fontFamily: {
-        'sf-pro-text': ['SF Pro Text', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
-        'sf-pro-icons': ['SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
-        // Add more font families or customize as needed
-      },
+    
       keyframes: {
         marquee: {
           '0%': { transform: 'translateX(100%)' },

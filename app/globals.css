@@ -2,21 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+
+
 
 * {
+  font-family: 'sf-pro-text', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -24,21 +15,27 @@
 
 html, body {
   height: 100%;
-  font-family: 'sf-pro-text', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    ),
-    rgb(var(--background-start-rgb)) rgb(0, 0, 0);
+  
   overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Inter', sans-serif;
+@font-face {
+  font-family: 'sf-pro-text';
+  font-style: normal;
+  font-weight:  400;
+  src: url(/font/SFPRODISPLAYREGULAR.OTF) format('opentype');
+}
+@font-face {
+  font-family: 'sf-pro-text';
+  font-style: normal;
+  font-weight:500;
+  src: url(/font/SFPRODISPLAYMEDIUM.OTF) format('opentype');
+}
+@font-face {
+  font-family: 'sf-pro-text';
+  font-style: normal;
+  font-weight:  700;
+  src: url(/public//font/SFPRODISPLAYBOLD.OTF) format('opentype');
 }
 
 /* Header styles */

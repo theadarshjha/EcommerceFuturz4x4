@@ -1,12 +1,10 @@
 // app/layout.tsx
 import { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import './globals.css';
 import Footer from '@/Components/Landing page/header&footer/footer';
 import { CartProvider } from '@/Components/contexts/CartContext';
 import Header from '@/Components/Landing page/header&footer/header';
 
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'FUTURZ 4x4',
@@ -23,7 +21,7 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body className={inter.className}>
+      <body >
         <CartProvider>
           <Header/>
           {children}
