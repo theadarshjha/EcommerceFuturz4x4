@@ -18,7 +18,8 @@ import {
   TabPanels,
 } from '@headlessui/react'
 import { MinusIcon, MagnifyingGlassIcon, ShoppingBagIcon, XMarkIcon } from '@heroicons/react/24/outline';
-import { useCart } from '../../contexts/CartContext';
+import { useCart } from '@/Components/contexts/CartContext';
+import Image from 'next/image';
 const navigation = {
   categories: [
     {
@@ -197,7 +198,7 @@ export default function Example() {
                       {category.featured.map((item) => (
                         <div key={item.name} className="group relative text-sm">
                           <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
-                            <img alt={item.imageAlt} src={item.imageSrc} className="object-cover object-center" />
+                           
                           </div>
                           <a href={item.href} className="mt-6 block font-medium text-gray-900">
                             <span aria-hidden="true" className="absolute inset-0 z-10" />
@@ -259,11 +260,7 @@ export default function Example() {
 
             <div className="border-t border-gray-200 px-4 py-6">
               <a href="#" className="-m-2 flex items-center p-2">
-                <img
-                  alt=""
-                  src="https://tailwindui.com/img/flags/flag-canada.svg"
-                  className="block h-auto w-5 flex-shrink-0"
-                />
+              
                 <span className="ml-3 block text-base font-medium text-gray-900">CAD</span>
                 <span className="sr-only">, change currency</span>
               </a>
@@ -294,7 +291,7 @@ export default function Example() {
               <div className="ml-4 flex lg:ml-0">
                 <a href="/">
                   <span className="sr-only">Futurz4x4</span>
-                  <img
+                  <Image
                     alt=""
                     src="FUTURZ LOGO 01.png"
                     className="h-6 w-[150px]"
@@ -327,7 +324,7 @@ export default function Example() {
                                 {category.featured.map((item) => (
                                   <div key={item.name} className="group relative text-base sm:text-sm">
                                     <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
-                                      <img
+                                      <Image
                                         alt={item.imageAlt}
                                         src={item.imageSrc}
                                         className="object-cover object-center"
